@@ -1,0 +1,6 @@
+services:
+  react-app:
+    image: ritikshrivas822/my-app:latest
+    ports:
+      - "3000:3000"
+      

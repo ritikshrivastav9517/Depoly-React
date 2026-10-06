@@ -2,9 +2,13 @@ FROM node:20
 
 WORKDIR /myapp
 
-COPY . .
+COPY package*.json ./
 
 RUN npm install
+
+COPY . .
+
+ENV HOST=0.0.0.0
 
 EXPOSE 3000
 
